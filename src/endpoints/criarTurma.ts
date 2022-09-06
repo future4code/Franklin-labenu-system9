@@ -5,8 +5,8 @@ import addturma from "../data/addturma";
 export default async function criarTurma(req:Request, res:Response)  {
     try{
 
-        if(!req.body.nome || !req.body.periodo){
-            res.status(400).send("É necessário enviar o nome e o periodo da turma para realizar a criação")
+        if(!req.body.nome || !req.body.periodo || !req.body.datainicio ||!req.body.datafim ){
+            res.status(400).send("É necessário enviar o nome,data de inicio, data final e o periodo da turma para realizar a criação")
         }
 
         let nomeTurma = req.body.nome
@@ -24,9 +24,9 @@ export default async function criarTurma(req:Request, res:Response)  {
         await addturma(
             id,
             nomeTurma,
-            0,
-            req.body.periodo,      
-
+            req.body.datainicio,
+            req.body.datafim,
+            0, 
         )    
         res.status(200).send("Turma criada com sucesso!")
 
