@@ -30,8 +30,25 @@ As funcionalidades básicas da nossa aplicação são:
 
 → Criar turma;
 
-→ Adicionar estudante na turma;
+→ mudar estudante de turma;
 
-→ Adicionar docente na turma;
+→ mudar docente de turma;
 
-→ Pegar a idade de algum estudante a partir do id
+→ mudar modulo da turma;
+
+→ mudar status da turma;
+
+→ buscar docentes;
+
+→ buscar estudante por nome;
+
+→ buscar turmas ativas;
+
+
+Documentação da API
+https://documenter.getpostman.com/view/20034664/VVBUxRi5
+
+
+
+
+
