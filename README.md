@@ -1,6 +1,6 @@
 ## Grupo:
 
-### Andre Luiz Santolin
+### Andre Luis Santolin
 ### Carolina Bratos de Oliveira Almeida
 ### Danyelle A Candido
 
